@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: movie-info-service
+  datasource:
+    username: prasannapimparwar
+    url: jdbc:postgresql://localhost:5432/postgres
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+        format_sql: 'true'
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+my:
+  cross:
+    origin: http://localhost:3000
+
+
