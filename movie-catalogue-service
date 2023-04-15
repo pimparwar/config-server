@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: movie-catalogue-service
+
+my:
+  cross:
+    origin: http://localhost:3000
+
+rating:
+  url: http://rating-data-service/ratings/users/
+
+movie:
+  info:
+    url: http://movie-info-service/movies/
+
+
+
