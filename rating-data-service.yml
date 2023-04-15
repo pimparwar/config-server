@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    username: prasannapimparwar
+    url: jdbc:postgresql://localhost:5432/user-ratings
+    password: postgres
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc:
+          lob:
+            non_contextual_creation: 'true'
+        format_sql: 'true'
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+  cache:
+    type: none
+  application:
+    name: rating-data-service
+my:
+  cross:
+    origin: http://localhost:3000
+server:
+  port: '8083'
+
+
